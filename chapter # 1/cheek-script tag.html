@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #333;
+}
+
+.textboxes input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.textboxes input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.remember p {
+    color: #6c63ff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.remember p:hover {
+    color: #4b45c2;
+}
+
+.button button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #574fcf;
+}
+
+  </style>
+    <title>Login Page</title>
+    <script>
+        console.log("a. Script in head");
+    </script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script>
+        console.log("b. Script before page HTML");
+    </script>
+
+    <div class="container">
+        <div class="card">
+            <h1>Login</h1>
+            <div class="textboxes">
+                <input type="text" placeholder="Enter Your Email">
+                <input type="password" placeholder="Enter Your Password">
+            </div>
+            <div class="remember">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <p>Forgot Password?</p>
+            </div>
+
+            <script>
+                console.log("c. Script inside page HTML");
+            </script>
+
+            <div class="button">
+                <button>Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        console.log("d. Script after page HTML");
+        alert("Please Login")
+    </script>
+
+</body>
+
+</html>
